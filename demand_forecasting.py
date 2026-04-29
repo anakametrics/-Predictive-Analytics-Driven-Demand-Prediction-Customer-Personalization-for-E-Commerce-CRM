@@ -51,3 +51,6 @@ def run_forecast(path="data/sample_data.csv", product_name=None):
     # RETURN OUTPUT
     # -------------------------------
     return forecast[["ds", "yhat", "yhat_lower", "yhat_upper"]]
+    plt.savefig("outputs/forecast_plot.png")
+
+
